@@ -13,6 +13,7 @@ public class LearnMocking {
 	
 	@BeforeMethod
 	public void setUpStub() {
+		//Creating stub
 		stubFor(get(urlEqualTo("/api/issues"))
 				.willReturn(aResponse()
 						//.withHeader("Content-Type", "application/json")
